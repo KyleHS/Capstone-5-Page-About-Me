@@ -1,5 +1,6 @@
+/*Styling*/
 body {
-    display: flex;
+    display: flex; /*Responsive content*/
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
@@ -7,19 +8,8 @@ body {
     background-color: #f7f7f7; /* Light Gray */
 }
 
-nav {
-    background-color: #34495e; /* Dark Blue */
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed; /* Fixed the navbar to the top */
-    width: 100%; /* Made the navbar span the entire width of the viewport */
-    top: 0; /* Position the navbar at the top of the viewport */
-    z-index: 1000; /* Ensures the navbar is on top of other content */
-}
 
+/*Content and headers*/
 main {
     padding: 20px;
 }
@@ -46,21 +36,36 @@ h2 {
 p {
     color: #585757;
     line-height: 1.6;
+    font-size: 22px;
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 10px 0;
-    width: 80%;
-    border: 2px solid #34495e; /* Add a border with 2px width and a light gray color */
-    border-radius: 5px; /* Add rounded corners to the border */
+    width: 50%;
+    border: 2px solid #206600; /* Adds greenish border to images */
+    border-radius: 5px; /* Adds rounded corners to images*/
+}
+
+/*Navbar*/
+nav {
+    background-color: #206600; /* Dark green */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Fixed the navbar to the top */
+    width: 100%; /* Made the navbar span the entire width of the viewport */
+    top: 0; /* Position the navbar at the top of the viewport */
+    z-index: 1000; /* Ensures the navbar is on top of other content */
 }
 
 
 .nav-links {
-    list-style: none;
+    list-style: none; /*Removes styling*/
     display: flex;
 }
 
@@ -74,13 +79,14 @@ img {
 }
 
 .nav-links li a:hover {
-    color: #1abc9c; /* Teal - Change color on hover */
+    color: #1abc9c; /* Gives links a tealish color when user hovers over. */
 }
  
+/*Footing*/
 
 footer {
-    background-color: #34495e; /* Dark Blue */
-    color: #fff;
+    background-color: #206600; /* Dark green */
+    color: #fff;  /*Text is white*/
     padding: 20px;
     text-align: center;
     margin-top: auto;
